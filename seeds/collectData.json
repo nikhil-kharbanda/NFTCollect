@@ -1,0 +1,26 @@
+[
+    {
+        "collectName": "Nick Playful ",
+        "content": "Nick's Wonderful World of NFT's",
+        "imageTag": "img2.gif",
+        "userId": 1
+    },
+    {
+        "collectName": "Michael Monkeys",
+        "content": "Michael's Explosive NFT's",
+        "imageTag": "https://lh3.googleusercontent.com/MS8DTHZQAGoPeU0Ob1cyrsArl04dp7BtWF1GB39d4nRqJKZKkEpJ_QR6MNBqWK89-Yta6RdBnw4xEbAjiQ4VAx_zsiewA11vNHyP_A=w600",
+        "userId": 2
+    },
+    {
+        "collectName": "Old Time Ethan",
+        "content": "Bob's Impressive NFT Collection",
+        "imageTag": "img3.png",
+        "userId": 3
+    },   
+    {
+        "collectName": "Callum Unseen Skies",
+        "content": "Callum;s NFT Collection has grown",
+        "imageTag": "img4.jpg",
+        "userId": 4
+    }
+]

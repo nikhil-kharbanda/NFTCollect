@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "userName": "Nick",
+        "email": "nik22cool@hotmail.com",
+        "password": "123456789"
+    },
+    {
+        "id": 2,
+        "userName": "Michael",
+        "email": "Artist@hotmail.com",
+        "password": "123456789"
+    },   
+    {
+        "id": 3, 
+        "userName": "Ethan",
+        "email": "ethan@hotmail.com",
+        "password": "123456789"
+    },
+    {
+        "id": 4,
+        "userName": "Callum",
+        "email": "Callum@hotmail.com",
+        "password": "123456789"
+    }
+]
