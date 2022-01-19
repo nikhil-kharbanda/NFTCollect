@@ -1,3 +1,9 @@
+<style>
+.log {
+    font-family: 'Cedarville Cursive';font-size: 22px;
+}
+</style>
+
 
 <nav>
     <div class="container">
@@ -6,7 +12,9 @@
         </h2>
         <div class="search-bar">
             <i class="uil uil-search"></i>
-            <input type="search" placeholder="Search For NFT Collectors">
+            <input type="search" placeholder="Search For NFT's (inactive)">
+            {{!-- TODO: insert search button --}}
+            {{!-- TODO: send keyword to function (in comment.js file) --}}
         </div>
         <div class="create">
 
@@ -73,9 +81,25 @@
 
                             </div>
                         </div>
-                        <span class="edit">
+
+                        {{!-- <span class="dropbtn">
                             <i class="uil uil-ellipsis-h"></i>
+                            <div class = "dropdown">
+                                <a href="#">Delete</a>
+                            </div>
+                        </span> --}}
+
+                        <span class="dropdown">
+                            <i class="uil uil-ellipsis-h dropbtn"></i>
+                            <div class="dropdown-content">
+                                <a href="#">Delete (inactive)</a>
+                            </div>
                         </span>
+
+ 
+                            {{!-- TODO: Only make button visable if user auth --}}
+                            {{!-- TODO: When button is clicked, send the id of the NFT --}}
+                        
                     </div>
 
 
@@ -84,12 +108,6 @@
                     </div>
 
 
-                    <div class="action-buttons">
-                        <div class="interaction-buttons">
-                            <span><i class="uil uil-heart"></i></span>
-                            <span><i class="uil uil-comment-dots"></i></span>
-                        </div>
-                    </div>
                     <div class="caption">
 
                         <p><b>{{data.collectName}} by {{user.userName}} </b> {{data.content}} {{user_id.id}}<span

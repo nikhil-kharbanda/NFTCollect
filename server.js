@@ -21,13 +21,13 @@ app.use(fileUpload())
 
 
 const sess = {
-  secret: "Super secret secret",
-  cookie: {},
-  resave: false,
-  saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize,
-  }),
+    secret: "Super secret secret",
+    cookie: {},
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize,
+    }),
 };
 app.use(session(sess));
 
@@ -43,5 +43,5 @@ app.set('view engine', 'handlebars')
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log("Now listening"));
+    app.listen(PORT, () => console.log("Now listening on http://localhost:3001/"));
 });
