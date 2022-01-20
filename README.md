@@ -49,6 +49,8 @@ https://nftcollect.herokuapp.com/
 Sample username: Nick
 Sample password: 123456789
 
+NOTE: There might be some loading time
+
 ## Purpose
   To apply for the developer role at Shopify
 
@@ -58,6 +60,8 @@ Sample password: 123456789
 
 Sample username: Nick
 Sample password: 123456789
+
+NOTE: There might be some loading time
 
 ## About the developer 
   nikhil-kharbanda <br >
