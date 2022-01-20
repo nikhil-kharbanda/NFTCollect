@@ -25,7 +25,7 @@
 
 ### Clone Repository
 
-git clone https://github.com/nikhil-kharbanda/UofT_NFTC
+git clone https://github.com/nikhil-kharbanda/NFTCollect
  
 ### Install Dependencies
 
