@@ -139,7 +139,7 @@ main .container {
 }
 
 
-/*  Left Collumn  */
+/*  Left Column  */
 
 main .container .left {
     height: max-content;
@@ -227,7 +227,7 @@ main .container .left .profile {
 }
 
 
-/*  Middle Collumn */
+/*  Middle Column */
 
 .dropdown-content {
     display: none;

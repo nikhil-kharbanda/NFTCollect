@@ -82,26 +82,19 @@
                             </div>
                         </div>
 
-                        {{!-- <span class="dropbtn">
-                            <i class="uil uil-ellipsis-h"></i>
-                            <div class = "dropdown">
-                                <a href="#">Delete</a>
-                            </div>
-                        </span> --}}
 
+
+                        {{#if_equals ../idUser "==" userId}}
                         <span class="dropdown">
                             <i class="uil uil-ellipsis-h dropbtn"></i>
                             <div class="dropdown-content">
-                                <a href="#">Delete (inactive)</a>
+                                <button class = "deleteBtn" data-currentid="{{data.id}}" >Delete</button>
                             </div>
                         </span>
-
- 
-                            {{!-- TODO: Only make button visable if user auth --}}
-                            {{!-- TODO: When button is clicked, send the id of the NFT --}}
+                        {{/if_equals}}
                         
                     </div>
-
+ 
 
                     <div class="photo">
                         <img src="{{data.imageTag}}">

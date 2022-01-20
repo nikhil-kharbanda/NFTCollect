@@ -3,45 +3,44 @@ const sequelize = require('../config/connection');
 
 class Collect extends Model {}
 
-Collect.init(
-  {
+//The posts model
+//Contains an id (int), a name, description, tag, the date uploaded, and the user who posted it
+Collect.init({
     id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true,
     },
     collectName: {
-      type: DataTypes.STRING,
-      allowNull: false
+        type: DataTypes.STRING,
+        allowNull: false
     },
     content: {
-      type: DataTypes.STRING,
-      allowNull: false
+        type: DataTypes.STRING,
+        allowNull: false
     },
     imageTag: {
-      type: DataTypes.STRING,
+        type: DataTypes.STRING,
     },
     dateCreated: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
+        type: DataTypes.DATE,
+        allowNull: false,
+        defaultValue: DataTypes.NOW,
     },
     userId: {
-      type: DataTypes.INTEGER,
+        type: DataTypes.INTEGER,
         references: {
-        model: 'user',
-        key: 'id',
-      },
+            model: 'user',
+            key: 'id',
+        },
     },
-  },
-  {
+}, {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'collect',
-  }
-);
+});
 
-module.exports = Collect ;
+module.exports = Collect;

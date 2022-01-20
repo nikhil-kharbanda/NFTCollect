@@ -1,0 +1,35 @@
+Summer 2022 - Shopify
+Developer Intern Challenge Question
+
+TASK: Build an image repository.
+
+You can tackle this challenge using any technology you want. This is an open-ended task.
+
+Please provide brief instructions on how to use your application. We are a test driven environment, so ensure your challenge includes tests. 
+Provide brief instructions on how to use your application, so that someone could use your application and understand how it works. 
+
+Extra Information: You can, if you wish, use frameworks, libraries and external dependencies to help you get faster to the parts you are interested in building, 
+if this helps you; or start from scratch. When building, consider how more features could be added in the future. 
+
+Please focus on what interests you the most. If you need inspiration, here are examples of what you can work on. IF you work on these ideas, we recommend choosing only one or two.
+
+Ideas:
+SEARCH function
+from characteristics of the images
+from text
+from an image (search for similar images)
+ADD image(s) to the repository
+one / bulk / enormous amount of images
+private or public (permissions)
+secure uploading and stored images
+DELETE image(s)
+one / bulk / selected / all images
+Prevent a user deleting images from another user (access control)
+secure deletion of images
+SELL/BUY images
+ability to manage inventory
+set price
+discounts
+handle money
+
+* Save your work to your GitHub and link the specific challenge to your application. 

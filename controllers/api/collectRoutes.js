@@ -1,14 +1,10 @@
-//Upload image to database
 const router = require("express").Router();
 const { Collect, User, Comment } = require("../../models");
 const sequelize = require("../../config/connection");
 const withAuth = require("../../utils/auth");
 
-//CREATE a post
+//CREATE a post, adding new image to database
 router.post("/", async(req, res) => {
-    //the body of the request
-    //the file from the body of the request(amar's upload function)
-    //pass the ide from the params
 
     console.log(req.body);
     console.log(req.files.sampleFile.name);
@@ -18,6 +14,7 @@ router.post("/", async(req, res) => {
 
     req.files.sampleFile.mv(upload, async function(err) {
         if (err) return res.status(500).send(err);
+        //upload picture with metadata of post name, description, user who is posting it, and the image
         try {
             const dbPostData = await Collect.create({
                 collectName: req.body.uploadTitle,
@@ -26,14 +23,18 @@ router.post("/", async(req, res) => {
                 imageTag: finalImg,
             });
 
+            //refresh the page
             res.redirect('/feed');
+
+            //if error occurs or image could not be uploaded
         } catch (err) {
             res.status(400).json(err);
         }
     });
 });
 
-router.get("/id", (req, res) => {
+//get single post by id
+router.get(":/id", (req, res) => {
     Collect.findOne({
             where: {
                 id: req.params.id,
@@ -65,8 +66,9 @@ router.get("/id", (req, res) => {
         });
 });
 
+//delete a post by id
 router.delete("/:id", withAuth, (req, res) => {
-    Post.destroy({
+    Collect.destroy({
             where: {
                 id: req.params.id,
             },
