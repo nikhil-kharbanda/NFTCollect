@@ -53,7 +53,11 @@ Sample password: 123456789
   To apply for the developer role at Shopify
 
 ## Run
-  npm run seeds, then npm run start for local run. Use the link (https://nftc-collect.herokuapp.com/) to run the app itself
+  npm run seeds, then npm run start for local run.  
+  You can see a sample of this website here: https://nftcollect.herokuapp.com/  
+
+Sample username: Nick
+Sample password: 123456789
 
 ## About the developer 
   nikhil-kharbanda <br >
