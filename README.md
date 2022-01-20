@@ -6,14 +6,11 @@
 ## Description
   “Non-fungible” means that it’s unique and can’t be replaced with something else. For example, a bitcoin is fungible — trade one for another bitcoin, and you’ll have exactly the same thing. A one-of-a-kind trading card, however, is non-fungible. If you traded it for a different card, you’d have something completely different. 
 
-  In this project, we created an "Instagram" for collectable NFT's
+  In this project, I have created an "Instagram" for collectable NFT's.
 
-### User Case
+  Users can upload their NFT's along with a caption and a description, as well as comment on other peoples NFT's.
 
-AS AN interested collector of NFT’s  
-I WANT to see posted NFT’s   
-I WANT to comment on other users NFT’s  
-I WANT to show my NFT collection  
+  Users who post their NFT up also have the ability to delete that post
 
 ## Table of Contents
   - [Description](#description)
@@ -37,23 +34,26 @@ Ensure you have Node.js installed on your machine. The application will be invok
 
 Create an .env file containing the database name, your sql username and password. Initialize your database by running the "schema.sql" file with MySQL
 
-You can run the project by entering into terminal: "npm start"
+Load the data by running the command "npm run seeds"
+
+You can run the project by entering into terminal: "npm run watch"
 
 ### Start Application
 
 You will see App running on port 3001! in the console. You can then view the app on http://localhost:3001/.
 
+### Demo
+You can see a sample of this website here:
+https://nftcollect.herokuapp.com/
+
+Sample username: Nick
+Sample password: 123456789
+
 ## Purpose
-  To use the technology we learned in part 1 and part 2 of the coding bootcamp
+  To apply for the developer role at Shopify
 
 ## Run
   npm run seeds, then npm run start for local run. Use the link (https://nftc-collect.herokuapp.com/) to run the app itself
-
-## Contributing
-
-
-## Video
-  n/a
 
 ## About the developer 
   nikhil-kharbanda <br >
